@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan:hsl(186, 14%, 43%);
+    --grayish-cyan:hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan:hsl(189, 41%, 97%);
+    --white:hsl(0, 0%, 100%);
+    --font-size-form-inputs:24px;
+    --font-family-space-mono:'Space Mono', monospace;
+}
+body{
+    background-color: var(--light-grayish-cyan);
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+    font-family: var(--font-family-space-mono);
+
+}
+.card-tip {
+    background-color: var(--white);
+    width: 705px;
+    height: 365px;
+    border-radius: 22px;
+    margin-inline: auto;
+}
+.display-flex-col{
+    display: flex;
+}
+.input-area-field{
+    height: 365px;
+    width: 352.5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:30px;
+    gap: 30px;
+}
+.input-area-field .bill {
+    font-size: 14px;
+    color: var(--grayish-cyan);
+}
+.output-amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 352.5px;
+}
+.output-amount-card{
+    width: 317px;
+    height: 319px;
+    border-radius: 10px;
+    background-color: var(--very-dark-cyan);
+}
+.input-area-bill{
+    width: 287px;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-grayish-cyan);
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.input-area-bill input {
+    width: 287px;
+    height: 35px;
+    border: none;
+    background: none;
+    padding: 10px;
+    text-align: right;
+    font-weight: 900;
+    color: var(--very-dark-cyan);
+    outline: none;
+    font-family: var(--font-family-space-mono);
+}
+.input-area-bill input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-area-bill img {
+    padding: 2px;
+}
+.select-tip-txt{
+    font-size: 13px;
+    color: var(--grayish-cyan);
+}
+.select-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+}
+.first-layer .btn {
+    width: 90px;
+    height: 38px;
+    border: none;
+    background-color: var(--very-dark-cyan);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: var(--font-family-space-mono);
+    color: var(--very-light-grayish-cyan);
+    cursor: pointer;
+}
+.second-layer .btn {
+    border-radius: 5px;
+    width: 90px;
+    height: 38px;
+    border: none;
+    background-color: var(--very-dark-cyan);
+    font-size: 20px;
+    font-family: var(--font-family-space-mono);
+    color: var(--very-light-grayish-cyan);
+    cursor: pointer;
+}
+.custom-btn {
+    border-radius: 5px;
+    width: 90px;
+    height: 38px;
+    border: none;
+    font-weight: 400;
+    background-color: var(--light-grayish-cyan);
+    font-weight: 900;
+    font-family: var(--font-family-space-mono);
+    color: var(--dark-grayish-cyan);
+    cursor: pointer;
+}
+.number-of-people-txt{
+    font-family: var(--font-family-space-mono);
+    font-size: 13px;
+    color: var(--grayish-cyan);
+}
+.input-area-of-people{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 287px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--light-grayish-cyan);
+    padding-left: 10px;
+}
+
+.error{
+    color:  red; font-size: 12px;margin-left: 50px;
+    display: none;
+}
+
+.people-inputs-field{
+    width: 287px;
+    height: 35px;
+    text-align: right;
+    border: none;
+    background: none;
+    padding: 10px;
+    font-family: var(--font-family-space-mono);
+    color: var(--very-dark-cyan);
+    outline: none;
+}
+.people-inputs-field::-webkit-inner-spin-button,
+.people-inputs-field::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.btn-custom{
+    width: 90px;
+    height: 38px;
+    text-align: right;  
+    background: none;
+    padding: 10px;
+    font-family: var(--font-family-space-mono);
+    color: var(--very-dark-cyan);
+    outline: none;
+    text-align: center;
+    border: none;
+    background-color: var(--very-light-grayish-cyan);
+}
+.left-text{
+    display: flex;
+    flex-direction: column;
+}
+.left-text span{
+    color: var(--white);
+}
+.left-text p {
+    color: var(--grayish-cyan);
+    font-size: 13px;
+}
+.tip-amount-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.output-amount-card{
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.tip-amount-output .tip-zero{
+    color: var(--strong-cyan);
+}
+.total-person-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total span {
+    font-family: var(--font-family-space-mono);
+    color: white;
+}
+.total p{
+    color: var(--grayish-cyan);
+    font-size: 13px;
+}
+.tip-amount-output .tip-zero-total {
+    color: var(--strong-cyan);
+}
+.btn-input-reset .btn-reset{
+    width: 100%;
+    border: none;
+    background-color: var(--grayish-cyan);
+    color: var(--dark-grayish-cyan);
+    height: 38px;
+    border-radius: 7px;
+    font-weight: 900;
+}
+.card-row-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+    .attribution { font-size: 11px; text-align: center; margin-top:20px ;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+.btn:focus{
+    color: var(--very-dark-cyan);
+    background-color: var(--light-grayish-cyan);
+}
+@media(max-width:500px) {
+
+    .card-tip {
+        background-color: var(--white);
+        width: 375px;
+        height: 791px;
+        border-radius: 22px;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display-flex-col{
+        display: flex;
+        flex-direction: column;
+    }
+}
